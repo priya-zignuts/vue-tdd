@@ -1,13 +1,13 @@
 <template>
   <div class="form-popup">
     <form class="form-container" @submit.prevent="submit">
-      <label for="username"><b>Username:</b></label>
+      <label for="Username"><b>Username:</b></label>
       <input v-model="form.username" id="username" type="text" />
 
-      <label for="email"><b>Email:</b></label>
+      <label for="Email"><b>Email:</b></label>
       <input v-model="form.email" id="email" type="email" />
 
-      <label for="password"><b>Password:</b></label>
+      <label for="Password"><b>Password:</b></label>
       <input v-model="form.password" id="password" type="password" />
 
       <button type="submit" class="btn">Sign Up</button>
@@ -36,8 +36,8 @@ const { handleSubmit } = useForm({
 });
 const form = ref({
   username: "",
-  email: "",
-  password: "",
+  email: "eve.holt@reqres.in",
+  password: "pistol",
 });
 
 const submit = handleSubmit(() => {

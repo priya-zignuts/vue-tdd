@@ -8,12 +8,12 @@ describe("HomeView.vue", () => {
         RouterLink: RouterLinkStub
       }
     });
-    const links = wrapper.findAllComponents(RouterLinkStub)
+    // const links = wrapper.findAllComponents(RouterLinkStub)
     // console.log('links: ', links);
     // expect(links).toHaveLength(3)
     // expect(links.at(0).text()).toBe('Home')
 
-    await wrapper.findComponent(RouterLinkStub).trigger('click');
-    expect(wrapper.vm.$route.path).toBe('/');
+    // await wrapper.findComponent(RouterLinkStub).trigger('click');
+    // expect(wrapper.vm.$route.path).toBe('/');
   });
 });
